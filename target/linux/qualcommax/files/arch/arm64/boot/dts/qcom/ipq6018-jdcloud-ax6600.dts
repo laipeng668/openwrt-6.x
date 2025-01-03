@@ -245,6 +245,12 @@
 	pinctrl-names = "default";
 	reset-gpios = <&tlmm 75 GPIO_ACTIVE_LOW>;
 
+	ethernet-phy-package@0 {
+		compatible = "qcom,qca8075-package";
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0>;
+		
 	qca8075_0: ethernet-phy@24 {
 		compatible = "ethernet-phy-ieee802.3-c22";
 		reg = <24>;
